@@ -1,0 +1,11 @@
+@media screen and (max-width: 911px) {
+  header .full-body,
+  ul {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+  }
+  html {
+    font-size: 40%;
+  }
+}
