@@ -64,3 +64,25 @@ prevss.addEventListener("click", () => {
   );
   slidess.prepend(lasttitem);
 });
+// ==================================================================
+let slider = document.querySelector(".slider .list");
+let itemss = document.querySelectorAll(".slider .list .item");
+let dots = document.querySelectorAll(".dots li");
+
+function reloadSlider() {
+  // itemss.style.display = "none";
+  let last_active_item = document.querySelector(".slider .list .item.active");
+  last_active_item.classList.remove("active");
+  itemss[active].classList.add("active");
+
+  let last_active_dot = document.querySelector(".dots li.active");
+  last_active_dot.classList.remove("active");
+  dots[active].classList.add("active");
+}
+
+dots.forEach((li, key) => {
+  li.addEventListener("click", () => {
+    active = key;
+    reloadSlider();
+  });
+});
