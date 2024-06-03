@@ -205,7 +205,7 @@ header .right {
   align-items: center;
   display: flex;
   height: 100%;
-  margin-right: 5rem;
+  justify-content: end;
   gap: 2rem;
 }
 header .right p {
@@ -271,13 +271,12 @@ main .home {
   font-size: 3rem;
   max-width: 100%;
   text-shadow: 2px 2px 2px black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 main .home h3 {
-  margin-top: 18rem;
   font-family: "Big Shoulders Text", sans-serif;
-}
-.home .introduc {
-  padding-top: 8rem;
 }
 /*======================================= intro ==================================*/
 #intro {
@@ -310,15 +309,14 @@ main .home h3 {
   letter-spacing: 2rem;
   text-align: center;
 }
-.slides {
+#intro .slides {
   overflow: hidden;
   position: relative;
   width: 100%;
   height: 60rem;
   box-sizing: border-box;
-  /* border: 2px solid white; */
 }
-.items {
+#intro .items {
   width: 100%;
   height: 65rem;
   background-size: cover;
@@ -371,7 +369,7 @@ main .home h3 {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding: 10rem;
+  padding: 10%;
   font-family: "Big Shoulders Text", sans-serif;
 }
 #intro .decs .main {
@@ -551,7 +549,7 @@ main .home h3 {
   width: 100%;
   object-fit: cover;
   height: 50rem;
-  object-position: 0;
+  object-position: 50%;
   box-sizing: border-box;
   transition: 1s;
 }
@@ -584,12 +582,12 @@ main .home h3 {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  padding: 10rem;
+  padding: 10%;
 }
 #solar-system .itemsss {
   position: absolute;
-  width: 14rem;
-  height: 22rem;
+  width: 13%;
+  height: 38%;
   background-size: cover;
   display: inline-block;
   background-position-y: bottom;
@@ -637,20 +635,20 @@ main .home h3 {
   box-sizing: border-box;
 }
 #solar-system .itemsss:nth-child(6) {
-  right: -14rem;
-  bottom: 10rem;
+  right: -15%;
+  bottom: 18%;
 }
 #solar-system .itemsss:nth-child(5) {
-  right: -5rem;
+  right: -5.5%;
 }
 #solar-system .itemsss:nth-child(4) {
-  right: 10rem;
+  right: 8.5%;
 }
 #solar-system .itemsss:nth-child(3) {
-  right: 25rem;
+  right: 22.5%;
 }
 #solar-system .itemsss:nth-child(2) {
-  right: 40rem;
+  right: 36.5%;
 }
 #solar-system .itemsss:nth-child(2),
 .itemsss:nth-child(3),
@@ -658,7 +656,7 @@ main .home h3 {
 .itemsss:nth-child(5) {
   background-position-x: 50%;
   transition: 1s;
-  bottom: 10rem;
+  bottom: 18%;
   z-index: 1;
 }
 #solar-system .itemsss:nth-child(6),
@@ -745,10 +743,12 @@ main .home h3 {
 .famous-quote .content {
   display: flex;
   color: #ffffff;
+  align-items: center;
+  text-align: justify;
 }
 .famous-quote img {
-  width: 30rem;
-  height: 30rem;
+  width: 30%;
+  height: 60%;
   object-fit: cover;
 }
 .famous-quote .quote {
@@ -760,9 +760,9 @@ main .home h3 {
 .famous-quote .quote h2 {
   font-size: 3rem;
 }
-.famous-quote .quote p {
+.famous-quote .quote blockquote {
   margin-top: 3rem;
-  font-size: 1.7rem;
+  font-size: 2rem;
 }
 .famous-quote .quote i {
   margin-top: 3rem;
@@ -889,6 +889,7 @@ main .home h3 {
   margin-bottom: 2rem;
 }
 #class-stars .slider {
+  margin-top: 5rem;
   min-height: 60rem;
   position: relative;
 }
@@ -897,10 +898,10 @@ main .home h3 {
   opacity: 1;
   transform: scale(1);
   z-index: 1;
-  bottom: 0;
+  top: 0;
 }
 #class-stars .slider .list .item {
-  bottom: -100%;
+  top: 100%;
   box-sizing: border-box;
   padding: 1rem;
   border-radius: 1.5rem;

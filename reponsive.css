@@ -1,4 +1,4 @@
-@media screen and (max-width: 911px) {
+@media screen and (max-width: 960px) {
   header .full-body ul {
     display: none;
     flex-direction: column;
@@ -7,10 +7,62 @@
   html {
     font-size: 40%;
   }
+  header .right {
+    width: 35%;
+  }
+  main .home {
+    height: 70vh;
+    background-size: 610%;
+    background-position: 40%;
+  }
+  #intro .slides,
+  #intro .items {
+    height: 80rem;
+  }
 }
 @media screen and (max-width: 600px) {
   #class-stars .slider {
     min-height: 66rem;
+  }
+  #solar-system .itemsss {
+    position: absolute;
+    width: 15%;
+    height: 14%;
+  }
+  #solar-system .itemsss {
+    background-position: 50%;
+  }
+  #solar-system .itemsss:nth-child(6) {
+    right: 10%;
+    bottom: 78%;
+  }
+  #solar-system .itemsss:nth-child(5) {
+    right: 10%;
+    bottom: 63%;
+  }
+  #solar-system .itemsss:nth-child(4) {
+    right: 10%;
+    bottom: 48%;
+  }
+  #solar-system .itemsss:nth-child(3) {
+    right: 10%;
+    bottom: 33%;
+  }
+  #solar-system .itemsss:nth-child(2) {
+    right: 10%;
+  }
+  #solar-system .itemsss:nth-child(2),
+  .itemsss:nth-child(3),
+  .itemsss:nth-child(4),
+  .itemsss:nth-child(5) {
+    background-position-x: 50%;
+    right: 10%;
+    transition: 1s;
+    bottom: 18%;
+    z-index: 1;
+  }
+  #solar-system .itemsss p {
+    width: 65%;
   }
 }
 
