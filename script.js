@@ -31,21 +31,6 @@ const autoSlide = setInterval(() => {
   slide.appendChild(firsttitem);
 }, 6000);
 
-// slide whow
-// const next = slide.querySelectorAll(".next");
-// const prev = slide.querySelectorAll(".prev");
-// document.querySelectorAll(".slides").forEach((slide, index) => {
-//   const items = slide.querySelectorAll(".list .items");
-
-//   next[index].addEventListener("click", () => {
-//     slide.querySelector(".list").appendChild(items[0]);
-//   });
-
-//   prev[index].addEventListener("click", () => {
-//     slide.querySelector(".list").prepend(items[items.length - 1]);
-//   });
-// });
-
 const itemsss = document.querySelectorAll(".listss .itemsss");
 const nextss = document.getElementById("nextss");
 const prevss = document.getElementById("prevss");

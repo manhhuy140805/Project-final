@@ -31,50 +31,61 @@
             M A - H
           </p>
           <!--left menu -->
-          <nav id="container">
-            <div class="center">
-              <ul class="main-menu">
-                <li style="margin-right: 1rem">
-                  <a href="">
-                    <i class="fa-solid fa-house" style="color: #ffffff"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <p class="Navigation">Giới Thiệu</p>
-                  </a>
-                </li>
-                <li>
-                  <a href="">
-                    <p class="Navigation">Bách Khoa</p>
-                  </a>
-                  <ul>
-                    <li><a href="">Sao</a></li>
-                    <li><a href="">Hệ Sao</a></li>
-                    <li><a href="">Thiên Hà</a></li>
-                    <li><a href="">Hành Tinh</a></li>
-                    <li><a href="">Tiểu Hành Tinh</a></li>
-                    <li><a href="">Thiên Hà</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#news">
-                    <p class="Navigation">Tin Tức</p>
-                  </a>
-                  <ul>
-                    <li><a href="">Tin Tức Chung</a></li>
-                    <li><a href="">Thành Tự Mới</a></li>
-                    <li><a href="">Sự Kiện Thiên Văn Nổi Bật</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="">
-                    <p class="Navigation">Cửa Hàng</p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+          <div class="menu">
+            <label for="check-bars" class="bars">
+              <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+            </label>
+            <input type="checkbox" name="" id="check-bars" />
+            <nav id="container">
+              <div class="center">
+                <ul class="main-menu">
+                  <li>
+                    <a class="navigation" href="">
+                      <i class="fa-solid fa-house" style="color: #ffffff"></i>
+                      <label for="">Trang Chủ</label>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="navigation" href="">
+                      <p>Giới Thiệu</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="navigation cpt" href="">
+                      <p>Bách Khoa</p>
+                    </a>
+                    <label for="bk">Bách Khoa</label>
+                    <input type="checkbox" name="" id="bk" />
+                    <ul>
+                      <li><a href="">Sao</a></li>
+                      <li><a href="">Hệ Sao</a></li>
+                      <li><a href="">Thiên Hà</a></li>
+                      <li><a href="">Hành Tinh</a></li>
+                      <li><a href="">Tiểu Hành Tinh</a></li>
+                      <li><a href="">Thiên Hà</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="cpt navigation" href="#news">
+                      <p>Tin Tức</p>
+                    </a>
+                    <label for="tt">TinTức</label>
+                    <input type="checkbox" name="" id="tt" />
+                    <ul>
+                      <li><a href="">Tin Tức Chung</a></li>
+                      <li><a href="">Thành Tự Mới</a></li>
+                      <li><a href="">Sự Kiện Thiên Văn Nổi Bật</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="navigation" href="">
+                      <p>Cửa Hàng</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
           <!-- right menu -->
           <div class="right">
             <button class="search-button">
@@ -159,7 +170,6 @@
                   </div>
                 </div>
               </div>
-
               <div
                 class="items"
                 style="background-image: url(images/intro/img2.jpg)"
@@ -176,7 +186,6 @@
                   </div>
                 </div>
               </div>
-
               <div
                 class="items"
                 style="background-image: url(images/intro/img3.webp)"
@@ -640,17 +649,15 @@
             <img src="images/Galileo-Galilei/img1.jpg" alt="" />
             <div class="quote">
               <h2>
-                <quote>
+                <blockquote>
                   "Dải Ngân Hà chỉ là một khối vô số các vì sao đứng thành chùm
                   với nhau".
-                </quote>
-              </h2>
-              <p>
-                <blockquote>
-                  "The Milky Way is nothing else but a mass of innumerable stars
-                  planted together in clusters"
                 </blockquote>
-              </p>
+              </h2>
+              <blockquote>
+                "The Milky Way is nothing else but a mass of innumerable stars
+                planted together in clusters"
+              </blockquote>
               <i>Galileo Galilei</i>
             </div>
           </div>
@@ -674,16 +681,19 @@
                       <ul>
                         <h2>1Thông Tin Cơ Bản</h2>
                         <li>
-                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000 lần so
+                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000
+                          lần so với Mặt Trời
+                        </li>
+                        <li>
+                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt
+                          Trời.
+                        </li>
+                        <li>
+                          <b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin
+                        </li>
+                        <li>
+                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so
                           với Mặt Trời
-                        </li>
-                        <li>
-                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt Trời.
-                        </li>
-                        <li><b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin</li>
-                        <li>
-                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so với Mặt
-                          Trời
                         </li>
                         <li><b>Tuổi đời:</b> Chỉ khoảng vài triệu năm</li>
                       </ul>
@@ -692,23 +702,42 @@
                   <div class="ex">
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>R-Doradus</h2>
+                        <ul>
+                          <h2>R-Doradus</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ đỏ</li>
-                          <li><b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng 178 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với
+                            Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            178 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/R-doradus.png" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/R-doradus.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>Bellatrix </h2>
+                        <ul>
+                          <h2>Bellatrix</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ xanh</li>
-                          <li><b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng  243 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            243 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/Bellatrix.jpg" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/Bellatrix.jpg"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -718,16 +747,19 @@
                       <ul>
                         <h2>2Thông Tin Cơ Bản</h2>
                         <li>
-                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000 lần so
+                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000
+                          lần so với Mặt Trời
+                        </li>
+                        <li>
+                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt
+                          Trời.
+                        </li>
+                        <li>
+                          <b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin
+                        </li>
+                        <li>
+                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so
                           với Mặt Trời
-                        </li>
-                        <li>
-                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt Trời.
-                        </li>
-                        <li><b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin</li>
-                        <li>
-                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so với Mặt
-                          Trời
                         </li>
                         <li><b>Tuổi đời:</b> Chỉ khoảng vài triệu năm</li>
                       </ul>
@@ -736,23 +768,42 @@
                   <div class="ex">
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>R-Doradus</h2>
+                        <ul>
+                          <h2>R-Doradus</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ đỏ</li>
-                          <li><b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng 178 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với
+                            Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            178 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/R-doradus.png" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/R-doradus.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>Bellatrix </h2>
+                        <ul>
+                          <h2>Bellatrix</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ xanh</li>
-                          <li><b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng  243 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            243 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/Bellatrix.jpg" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/Bellatrix.jpg"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -762,16 +813,19 @@
                       <ul>
                         <h2>3Thông Tin Cơ Bản</h2>
                         <li>
-                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000 lần so
+                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000
+                          lần so với Mặt Trời
+                        </li>
+                        <li>
+                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt
+                          Trời.
+                        </li>
+                        <li>
+                          <b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin
+                        </li>
+                        <li>
+                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so
                           với Mặt Trời
-                        </li>
-                        <li>
-                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt Trời.
-                        </li>
-                        <li><b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin</li>
-                        <li>
-                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so với Mặt
-                          Trời
                         </li>
                         <li><b>Tuổi đời:</b> Chỉ khoảng vài triệu năm</li>
                       </ul>
@@ -780,23 +834,42 @@
                   <div class="ex">
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>R-Doradus</h2>
+                        <ul>
+                          <h2>R-Doradus</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ đỏ</li>
-                          <li><b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng 178 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với
+                            Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            178 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/R-doradus.png" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/R-doradus.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>Bellatrix </h2>
+                        <ul>
+                          <h2>Bellatrix</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ xanh</li>
-                          <li><b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng  243 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            243 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/Bellatrix.jpg" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/Bellatrix.jpg"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -806,16 +879,19 @@
                       <ul>
                         <h2>Thông Tin Cơ Bản</h2>
                         <li>
-                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000 lần so
+                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000
+                          lần so với Mặt Trời
+                        </li>
+                        <li>
+                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt
+                          Trời.
+                        </li>
+                        <li>
+                          <b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin
+                        </li>
+                        <li>
+                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so
                           với Mặt Trời
-                        </li>
-                        <li>
-                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt Trời.
-                        </li>
-                        <li><b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin</li>
-                        <li>
-                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so với Mặt
-                          Trời
                         </li>
                         <li><b>Tuổi đời:</b> Chỉ khoảng vài triệu năm</li>
                       </ul>
@@ -824,23 +900,42 @@
                   <div class="ex">
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>R-Doradus</h2>
+                        <ul>
+                          <h2>R-Doradus</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ đỏ</li>
-                          <li><b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng 178 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với
+                            Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            178 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/R-doradus.png" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/R-doradus.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>Bellatrix </h2>
+                        <ul>
+                          <h2>Bellatrix</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ xanh</li>
-                          <li><b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng  243 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            243 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/Bellatrix.jpg" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/Bellatrix.jpg"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -850,16 +945,19 @@
                       <ul>
                         <h2>Thông Tin Cơ Bản</h2>
                         <li>
-                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000 lần so
+                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000
+                          lần so với Mặt Trời
+                        </li>
+                        <li>
+                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt
+                          Trời.
+                        </li>
+                        <li>
+                          <b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin
+                        </li>
+                        <li>
+                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so
                           với Mặt Trời
-                        </li>
-                        <li>
-                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt Trời.
-                        </li>
-                        <li><b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin</li>
-                        <li>
-                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so với Mặt
-                          Trời
                         </li>
                         <li><b>Tuổi đời:</b> Chỉ khoảng vài triệu năm</li>
                       </ul>
@@ -868,23 +966,42 @@
                   <div class="ex">
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>R-Doradus</h2>
+                        <ul>
+                          <h2>R-Doradus</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ đỏ</li>
-                          <li><b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng 178 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với
+                            Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            178 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/R-doradus.png" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/R-doradus.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>Bellatrix </h2>
+                        <ul>
+                          <h2>Bellatrix</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ xanh</li>
-                          <li><b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng  243 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            243 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/Bellatrix.jpg" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/Bellatrix.jpg"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -894,16 +1011,19 @@
                       <ul>
                         <h2>Thông Tin Cơ Bản</h2>
                         <li>
-                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000 lần so
+                          <b>Kích thước:</b> Đường kính lớn hơn từ 10 đến 1.000
+                          lần so với Mặt Trời
+                        </li>
+                        <li>
+                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt
+                          Trời.
+                        </li>
+                        <li>
+                          <b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin
+                        </li>
+                        <li>
+                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so
                           với Mặt Trời
-                        </li>
-                        <li>
-                          <b>Khối lượng:</b> Từ 3 đến 120 lần khối lượng của Mặt Trời.
-                        </li>
-                        <li><b>Nhiệt độ bề mặt:</b> Từ 3.000 đến 5.000 Kelvin</li>
-                        <li>
-                          <b>Độ sáng:</b> Từ 10.000 đến 100.000 lần sáng hơn so với Mặt
-                          Trời
                         </li>
                         <li><b>Tuổi đời:</b> Chỉ khoảng vài triệu năm</li>
                       </ul>
@@ -912,23 +1032,42 @@
                   <div class="ex">
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>R-Doradus</h2>
+                        <ul>
+                          <h2>R-Doradus</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ đỏ</li>
-                          <li><b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng 178 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 370 đến 610 lần so với
+                            Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            178 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/R-doradus.png" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/R-doradus.png"
+                          alt=""
+                        />
+                      </div>
                     </div>
                     <div class="in-ex">
                       <div class="title">
-                        <ul><h2>Bellatrix </h2>
+                        <ul>
+                          <h2>Bellatrix</h2>
                           <li><b>Loại Sao:</b> Sao khổng lồ xanh</li>
-                          <li><b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời</li>
-                          <li><b>Khoảng cách đế hệ Mặt Trời:</b>  Ước tính khoảng  243 năm ánh sáng</li>
+                          <li>
+                            <b>Kích thước:</b> Lớn hơn 6,6 lần so với Mặt Trời
+                          </li>
+                          <li>
+                            <b>Khoảng cách đế hệ Mặt Trời:</b> Ước tính khoảng
+                            243 năm ánh sáng
+                          </li>
                         </ul>
-                      <img src="images/Stellar-classification/Bellatrix.jpg" alt="">
-                    </div>
+                        <img
+                          src="images/Stellar-classification/Bellatrix.jpg"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>

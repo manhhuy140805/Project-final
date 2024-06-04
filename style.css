@@ -44,7 +44,7 @@ body {
   background-image: url(images/new-amp-page-bg.jpg);
   background-size: cover;
   background-repeat: repeat-y;
-  height: 900rem;
+  height: 1000rem;
 }
 main > div {
   padding: 6rem 0;
@@ -126,6 +126,9 @@ header .full-body {
   border-bottom: 1px solid white;
   align-items: center;
 }
+.bars {
+  display: none;
+}
 header ul.main-menu {
   display: flex;
   justify-content: space-around;
@@ -136,6 +139,9 @@ header .logo {
   height: 40%;
 }
 /* header center */
+header input {
+  display: none;
+}
 header .center a {
   height: 100%;
 }
@@ -153,10 +159,19 @@ header .center li ul {
   font-weight: 600;
   font-size: 1.7rem;
 }
+header .center label {
+  display: none;
+}
+header .center li input {
+  display: none;
+}
 header .center li ul li {
   height: 2.5rem;
   background-color: #0000009d;
   padding: 0.5rem 1rem 0.1rem 1rem;
+  transition: 0.5s;
+  box-sizing: border-box;
+  padding-right: 2rem;
 }
 header .center li:hover ul {
   padding-top: 1.6rem;
@@ -179,6 +194,13 @@ header .center .main-menu > li:first-child:after {
 }
 header .center li:hover:after {
   transform: scaleX(1);
+}
+header .center ul ul li:hover:after {
+  left: 0.5rem;
+}
+header .center ul ul li:hover {
+  padding-left: 2rem;
+  padding-right: 1rem;
 }
 header .center ul {
   gap: 2.5rem;
@@ -801,7 +823,7 @@ main .home h3 {
   bottom: -1rem;
   left: 0;
   transform: scaleX(0);
-  transition: 1s;
+  transition: 0.5s;
 }
 #class-stars ul li.active::after {
   transform: scaleX(1);
@@ -815,6 +837,7 @@ main .home h3 {
   width: 100%;
   min-height: 50rem;
   display: grid;
+  background-color: #c7c7c7;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -901,13 +924,13 @@ main .home h3 {
   top: 0;
 }
 #class-stars .slider .list .item {
-  top: 100%;
+  top: -40%;
   box-sizing: border-box;
   padding: 1rem;
   border-radius: 1.5rem;
-  transform: scale(0.7);
-  opacity: 0;
-  transition: 1s;
+  transform: scale(0.1);
+  opacity: 1;
+  transition: 0.7s;
   position: absolute;
   box-shadow: 0 0 35px black;
 }
