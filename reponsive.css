@@ -205,4 +205,11 @@
   #solar-system .itemsss h1 {
     margin-bottom: 7rem;
   }
+  #milkyway .scroll {
+    display: block;
+  }
+  #milkyway .scroll .left,
+  #milkyway .scroll .right {
+    width: 100%;
+  }
 }

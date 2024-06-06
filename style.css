@@ -31,20 +31,16 @@ ul {
 html {
   font-size: 62.5%;
   background-color: rgb(0, 0, 30);
-}
-body {
-  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 #wrap {
-  overflow: hidden;
   position: relative;
-  box-sizing: border-box;
   margin: 0% auto;
   max-width: 151.9rem;
   background-image: url(images/new-amp-page-bg.jpg);
   background-size: cover;
   background-repeat: repeat-y;
-  height: 1000rem;
+  background-position: 50%;
 }
 main > div {
   padding: 6rem 0;
@@ -259,10 +255,16 @@ header .fa-circle-user::before {
 /*============================================== main =============================*/
 /* ========================== home ===================*/
 .content {
+  overflow: hidden;
   margin: 0% auto;
   max-width: 111rem;
   box-sizing: border-box;
   padding: 1rem;
+}
+.content-2 {
+  overflow: hidden;
+  display: block;
+  color: #ffffff;
 }
 main h1 {
   padding-right: 4.5rem;
@@ -584,6 +586,12 @@ main .home h3 {
   background-color: #ffffff;
   margin-bottom: 0%;
   color: #ffffff;
+}
+#solar-system .content {
+  overflow: unset;
+}
+#solar-system .content-2 {
+  overflow: hidden;
 }
 #solar-system h1 {
   color: black;
@@ -934,11 +942,169 @@ main .home h3 {
   position: absolute;
   box-shadow: 0 0 35px black;
 }
-/* #class-stars .slider .list {
-  position: absolute;
-  display: flex;
+/* ============================ Milky Way ======================== */
+#milkyway .content-2 {
+  margin: 0% auto;
+  max-width: 111rem;
+  box-sizing: border-box;
 }
-#class-stars .slider .list .item {
-  animation: alternate-reverse;
+#milkyway .content-2 {
+  overflow: unset;
+  display: flex;
+  color: #b4b4b4;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+#milkyway .content-2 > div {
+  flex: 1 0 50rem;
+}
+#milkyway .content-2 .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#milkyway .content-2 .right {
+  width: 50%;
+  box-sizing: border-box;
+}
+#milkyway .content-2 .right .title {
+  padding: 4rem;
+  box-sizing: border-box;
+}
+#milkyway .content-2 .left video {
+  position: sticky;
+  top: 3%;
+  height: 90vh;
   width: 100%;
-} */
+  object-fit: cover;
+}
+#milkyway .content-2 .title h1 {
+  font-family: "Sofia Sans", sans-serif;
+  margin-top: 10rem;
+  font-size: 6rem;
+  border: none;
+}
+#milkyway .content-2 .title p {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+#milkyway .content-2 .title .inf {
+  border-bottom: 2px solid white;
+  margin-bottom: 3rem;
+}
+#milkyway .content-2 .title h2 {
+  font-family: "Big Shoulders Text", sans-serif;
+  margin: 7rem 0;
+  font-size: 5rem;
+  text-align: center;
+}
+#milkyway .content-2 .title h3 {
+  font-family: "Big Shoulders Text", sans-serif;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+#milkyway .content-2 .title h4 {
+  color: #ffffff;
+  font-family: "Big Shoulders Text", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+}
+/* =========================================footer================================= */
+footer .top {
+  background-color: #1f1f1f;
+}
+footer .top ul {
+  display: flex;
+  font-size: 2rem;
+  flex-wrap: wrap;
+}
+footer .top ul li {
+  height: 6rem;
+  width: 100%;
+  flex: 1 0 30rem;
+  border: 1px solid rgb(102, 102, 102);
+}
+footer .top ul a {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+footer .top ul a i {
+  padding: 0 1rem;
+}
+footer .bottom {
+  background-image: url(images/footer/footer-bg-copyright.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+footer .bottom .content-2 {
+  background-color: #000000a4;
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+footer .bottom .content-2 > div {
+  flex: 1 0 50rem;
+}
+footer .bottom .about-top {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+footer .bottom .about-top h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-family: "Big Shoulders Text", sans-serif;
+}
+footer .bottom .about-top h2 {
+  font-family: "Big Shoulders Text", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #b9b9b9;
+}
+footer .bottom .about-bottom h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 200;
+  margin-top: 5rem;
+  text-align: left;
+  font-style: italic;
+  font-family: "Big Shoulders Text", sans-serif;
+}
+footer .bottom .content-2 .information {
+  width: 60%;
+}
+footer .bottom .content-2 .information .main {
+  display: flex;
+  gap: 0rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .bottom .content-2 ul.main > li {
+  width: 100%;
+  flex: 2 0 20rem;
+  margin-bottom: 3rem;
+}
+footer .bottom img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+footer .bottom .information h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+footer .bottom .information h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
