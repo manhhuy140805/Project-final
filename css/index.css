@@ -1,0 +1,52 @@
+html {
+  background-color: rgb(0, 0, 30);
+  scroll-behavior: smooth;
+}
+#wrapper {
+  background-image: url(/images/new-amp-page-bg.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+main > div {
+  padding: 6rem 0;
+}
+/* search */
+header button:focus .search {
+  display: block;
+}
+.search {
+  text-align: center;
+  height: 0;
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/main/image1.jpg);
+  border-radius: 1.5rem;
+  transition: 1s;
+  overflow: hidden;
+}
+.search h1 {
+  padding-top: 18rem;
+  margin-bottom: 5rem;
+  font-family: system-ui;
+  font-size: 7rem;
+  color: rgb(201, 201, 201);
+}
+.search input {
+  width: 90%;
+  border: none;
+  margin-left: 1rem;
+  font-size: 2rem;
+  background-color: rgba(169, 210, 226, 0);
+  color: white;
+}
+header .center .main-menu > li:first-child:after {
+  transform: scaleX(1);
+}
+main h1 {
+  padding-right: 4.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid white;
+  font-size: 3rem;
+  display: inline-block;
+  margin-bottom: 4rem;
+}
