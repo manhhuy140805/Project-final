@@ -61,7 +61,7 @@
     background-color: rgb(15, 9, 29);
     padding-top: 10px;
     padding-left: 20px;
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
   header .full-body ul li:first-child .navigation {
     background-color: rgb(65, 65, 66);

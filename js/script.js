@@ -70,6 +70,3 @@ dots.forEach((li, key) => {
     reloadSlider();
   });
 });
-
-var vid = document.getElementById("myVideo");
-vid.currentTime = 30;

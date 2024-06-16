@@ -6,8 +6,6 @@
 a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  width: max-content;
-  height: max-content;
   cursor: pointer;
 }
 button {
@@ -46,6 +44,22 @@ html {
 .main-news .new:hover .zoom {
   transform: scale(1.1);
 }
+.back-home {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  background-color: #b4b4b4;
+  color: #000;
+  z-index: 5;
+}
+.back-home
 /* search */
 header button:focus .search {
   display: block;
@@ -96,11 +110,10 @@ header ul.main-menu {
   justify-content: space-around;
 }
 header .logo {
-  /* padding-right: 3rem; */
   width: 15rem;
   height: 40%;
 }
-/* header center */
+/*=================== header center================ */
 header input {
   display: none;
 }
@@ -180,7 +193,7 @@ header .center p {
   max-width: max-content;
   padding: 1.5rem 0;
 }
-/* header right */
+/*===================== header right ==================*/
 header .right {
   width: 15%;
   align-items: center;
@@ -236,10 +249,12 @@ main .home h1 {
   margin: 0%;
   background-color: #0000002f;
 }
-
+main .home .introduc {
+  width: 100%;
+}
 main .home {
   text-align: center;
-  background-image: url(/images/main/ast-bg-image-copyright.jpg);
+  background-image: url(../images/main/ast-bg-image-copyright.jpg);
   background-attachment: fixed;
   background-position-x: 50%;
   background-size: cover;
@@ -248,10 +263,11 @@ main .home {
   color: white;
   font-family: "Big Shoulders Text", sans-serif;
   font-size: 3rem;
-  max-width: 100%;
+  width: 100%;
   text-shadow: 2px 2px 2px black;
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 main .home h3 {
@@ -360,7 +376,7 @@ main .home h3 {
 }
 /*============================================ main news ===============================*/
 #news {
-  background-image: url(/images/news/backgroud.jpg);
+  background-image: url(../images/news/backgroud.jpg);
   background-attachment: fixed;
   background-size: cover;
   max-width: 100%;
@@ -814,7 +830,7 @@ main .home h3 {
   border-radius: 1.5rem;
 }
 #class-stars .item div.information {
-  background-image: url(/images/Stellar-classification/background.jpg);
+  background-image: url(../images/Stellar-classification/background.jpg);
   background-size: 199%;
   background-position-y: 30%;
 }
@@ -826,7 +842,7 @@ main .home h3 {
   grid-template-rows: auto auto;
 }
 #class-stars .item div.ex > div {
-  background-image: url(/images/Stellar-classification/background.jpg);
+  background-image: url(../images/Stellar-classification/background.jpg);
   background-size: 199%;
 }
 #class-stars .item div.ex > div:first-child {
@@ -996,7 +1012,7 @@ footer .top ul a i {
   padding: 0 1rem;
 }
 footer .bottom {
-  background-image: url(/images/footer/footer-bg-copyright.jpg);
+  background-image: url(../images/footer/footer-bg-copyright.jpg);
   background-size: cover;
   background-position: 50%;
 }

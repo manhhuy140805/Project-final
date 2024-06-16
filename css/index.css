@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 #wrapper {
-  background-image: url(/images/new-amp-page-bg.jpg);
+  background-image: url(../images/);
   background-size: cover;
   background-position: 50%;
 }
@@ -19,7 +19,7 @@ header button:focus .search {
   height: 0;
   background-size: cover;
   background-position: center;
-  background-image: url(/images/main/image1.jpg);
+  background-image: url(../images/main/image1.jpg);
   border-radius: 1.5rem;
   transition: 1s;
   overflow: hidden;
